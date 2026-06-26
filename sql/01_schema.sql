@@ -27,7 +27,7 @@ CREATE TABLE Staff (
     HireDate   DATE NOT NULL
 );
 
--- RoomTypes table defines the different types of rooms available
+-- RoomTypes table defines  the different types of rooms available
 CREATE TABLE RoomTypes (
     RoomTypeID   INT AUTO_INCREMENT PRIMARY KEY,
     TypeName     VARCHAR(50)   NOT NULL UNIQUE,
@@ -36,7 +36,7 @@ CREATE TABLE RoomTypes (
     MaxOccupancy INT NOT NULL
 );
 
--- Rooms table stores each individual room in the hotel
+-- Rooms table stores  each individual room in the hotel
 CREATE TABLE Rooms (
     RoomID     INT AUTO_INCREMENT PRIMARY KEY,
     RoomNumber VARCHAR(10) NOT NULL UNIQUE,
@@ -46,7 +46,7 @@ CREATE TABLE Rooms (
     FOREIGN KEY (RoomTypeID) REFERENCES RoomTypes(RoomTypeID)
 );
 
--- Bookings table stores each reservation made by a customer
+-- Bookings table stores  each reservation made by a customer
 CREATE TABLE Bookings (
     BookingID    INT AUTO_INCREMENT PRIMARY KEY,
     CustomerID   INT NOT NULL,
@@ -87,7 +87,7 @@ CREATE TABLE BookingServices (
     FOREIGN KEY (ServiceID) REFERENCES Services(ServiceID)
 );
 
--- Payments table stores payment information for each booking
+-- Payments table stores  payment information for each booking
 CREATE TABLE Payments (
     PaymentID     INT AUTO_INCREMENT PRIMARY KEY,
     BookingID     INT NOT NULL,

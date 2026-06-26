@@ -87,7 +87,7 @@ mysql -u root -p < sql/03_queries.sql
 
 ## Author
 
-Muhammad Ahsan Tahir
+Name: Muhammad Ahsan Tahir
 Roll Number: GH1050837
 Module: B103 Databases & Big Data
 Gisma University of Applied Sciences
