@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "AutoRunSQL",
+            "type": "shell",
+            "command": "Get-Content sql/01_schema.sql | mysql -u root -p1234; Get-Content sql/02_sample_data.sql | mysql -u root -p1234 hotel_reservation_db; Get-Content sql/03_queries.sql | mysql -u root -p1234 hotel_reservation_db",
+            "problemMatcher": [],
+            "runOptions": {
+                "runOn": "default"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": true
+            }
+        }
+    ]
+}
