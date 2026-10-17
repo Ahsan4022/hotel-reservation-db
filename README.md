@@ -6,7 +6,7 @@ A relational database I built to manage hotel rooms, customers, bookings, servic
 
 ## What does it do?
 
-I chose a hotel reservation system because it has lots of real relationships between  data and  customers make  bookings, bookings are linked to rooms ,  rooms have types, and payments are tracked  separately. It felt like a good  real-world  example to work with.
+I chose a hotel reservation system because it has lots of real relationships between data: customers make bookings, bookings are linked to rooms, rooms have types, and payments are tracked separately. It felt like a good real-world example to work with.
 
 The database can:
 
@@ -20,21 +20,14 @@ The database can:
 
 ## File Structure
 
-```
 hotel-reservation-db/
 │
 ├── sql/
-│   ├── 01_schema.sql        #--Creates all the tables
-│   ├── 02_sample_data.sql   # --Adds sample data to the tables
-│   └── 03_queries.sql       #  --SQL queries for all operations
-│
-├── docs/
-│   ├── erd.png              # --Entity Relationship Diagram
-│   ├── report.pdf           #  --Project report
-│   └── report.docx          #   --Project report (Word version)
+│ ├── 01_schema.sql # Creates all the tables
+│ ├── 02_sample_data.sql # Adds sample data to the tables
+│ └── 03_queries.sql # SQL queries for all operations
 │
 └── README.md
-```
 
 ---
 
@@ -79,15 +72,7 @@ mysql -u root -p < sql/03_queries.sql
 
 ---
 
-## Video Demonstration
-
-
-
----
-
 ## Author
 
-Name: Muhammad Ahsan Tahir
-Roll Number: GH1050837
-Module: B103 Databases & Big Data
-Gisma University of Applied Sciences
+Muhammad Ahsan Tahir
+University project for *B103 Databases & Big Data*, GISMA University of Applied Sciences
